@@ -27,7 +27,7 @@ export function Dashboard() {
 
       if (!res.ok) {
         const errData = await res.json();
-        throw new Error(errData.error || 'Analysis failed');
+        throw new Error(errData.details || errData.error || 'Analysis failed');
       }
 
       const data = await res.json();

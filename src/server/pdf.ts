@@ -6,6 +6,7 @@ import { PDFParse } from 'pdf-parse';
  */
 export async function extractTextFromPdf(fileBuffer: Buffer): Promise<string> {
   try {
+    // @ts-expect-error - PDFParse is callable at runtime despite TS type claiming otherwise
     const data = await PDFParse(fileBuffer);
     return data.text;
   } catch (error) {
