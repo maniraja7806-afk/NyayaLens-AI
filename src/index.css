@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* Onyx (Neutral/Zinc mapping) for a sleeker background */
+  --color-slate-900: #18181b;
+  --color-slate-800: #27272a;
+  --color-slate-700: #3f3f46;
+  --color-slate-600: #52525b;
+  --color-slate-500: #71717a;
+  --color-slate-400: #a1a1aa;
+  --color-slate-300: #d4d4d8;
+  --color-slate-200: #e4e4e7;
+  --color-slate-100: #f4f4f5;
+  --color-slate-50: #fafafa;
+
+  /* Premium Teal (replaces Blue as primary) */
+  --color-blue-900: #134e4a;
+  --color-blue-800: #115e59;
+  --color-blue-700: #0f766e;
+  --color-blue-600: #0d9488;
+  --color-blue-500: #14b8a6;
+  --color-blue-400: #2dd4bf;
+  --color-blue-300: #5eead4;
+  --color-blue-200: #99f6e4;
+  --color-blue-100: #ccfbf1;
+  --color-blue-50: #f0fdfa;
+
+  /* Cyan (replaces Violet for sharp gradient depth) */
+  --color-violet-700: #0e7490;
+  --color-violet-600: #0891b2;
+  --color-violet-500: #06b6d4;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl;
+}
